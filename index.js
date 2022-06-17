@@ -18,6 +18,10 @@ server.get('/about', function(request, response) {
   response.sendFile(__dirname +  '/about.html');
 });
 
+server.get('/apple-app-site-association', function(request, response) {
+  response.sendFile(__dirname +  '/.well-known/apple-app-site-association');
+});
+
 server.get('/.well-known/apple-app-site-association', function(request, response) {
   response.sendFile(__dirname +  '/.well-known/apple-app-site-association');
 });
