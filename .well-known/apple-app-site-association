@@ -10,7 +10,7 @@
                         {
                 "appID": "MTP4272HQ9.com.progyny.memberportal",
                 "paths": ["*"]
-            },
+            }
         ]
     }
 }
