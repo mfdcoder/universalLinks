@@ -1,4 +1,5 @@
 var express = require('express');
+const port = process.env.PORT || 3000;
 var server = express();
 
 // This will be call by APPLE TO VERIFY THE APP-SITE-ASSOCIATION 
@@ -22,4 +23,7 @@ server.get('/.well-known/apple-app-site-association', function(request, response
 });
 
 
-server.listen(80);
+server.listen(port, err => {
+  if(err) throw err;
+  console.log("%c Server running", "color: green");
+});
