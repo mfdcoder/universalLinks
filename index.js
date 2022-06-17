@@ -19,7 +19,7 @@ server.get('/about', function(request, response) {
 });
 
 server.get('/.well-known/apple-app-site-association', function(request, response) {
-  response.sendFile(__dirname +  '/apple-app-site-association');
+  response.sendFile(__dirname +  '/.well-known/apple-app-site-association');
 });
 
 
