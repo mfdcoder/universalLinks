@@ -5,11 +5,11 @@
 
             {
                 "appID": "3VQ84BG2Q5.com.progyny.memberportal",
-                "paths": ["micktestunilinks.herokuapp.com/*"]
+                "paths": ["micktestunilinks.herokuapp.com/*", "member.d0.progyny.com"]
             },
                         {
                 "appID": "MTP4272HQ9.com.progyny.memberportal",
-                "paths": ["micktestunilinks.herokuapp.com/*"]
+                "paths": ["micktestunilinks.herokuapp.com/*","member.d0.progyny.com"]
             }
         ]
     }
