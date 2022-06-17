@@ -1,0 +1,16 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+
+            {
+                "appID": "3VQ84BG2Q5.com.progyny.memberportal",
+                "paths": ["*"]
+            },
+                        {
+                "appID": "MTP4272HQ9.com.progyny.memberportal",
+                "paths": ["*"]
+            },
+        ]
+    }
+}
