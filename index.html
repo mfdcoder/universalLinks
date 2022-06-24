@@ -1,14 +1,36 @@
 <!DOCTYPE html>
-  <html>
-    <head>
-      <title> Univeral linking support </title>
-    </head>
+<html>
+  <head>
+    <title> Univeral linking support </title>
+  </head>
+  <script>
+    function submit() {
+
+      var clinic = document.getElementById("cname").value;
+      var dr = document.getElementById("drname").value;
+      location.href = "https://member.d0.progyny.com?clinic=" + clinic + "&dr=" + dr;
+    }
+
+
+    function appointments() {
+      var dr = document.getElementById("cname").value;
+      var clinic = document.getElementById("drname").value;
+      alert(dr);
+      location.href = "https://member.d0.progyny.com/appointments?clinic=" + clinic + "&dr=" + dr;
+    }
+  </script>
+
   <body>
-    <h1>This is a demo for Universal Link feature with apple-app-site-association</h1>
-    <label for="fname">Clinic:</label>
-<input type="text" id="fname" name="fname">
-     <label for="fname">Doctor name:</label>
-<input type="text" id="fname" name="fname">
-<a href="https://member.d0.progyny.com?Clinic=ABC&Dr=Max">Submit</a>
+
+    <h1>Enter clinic and doctor</h1>
+
+    <label for="cname">First name: </label>
+    <input type="text" id="cname" name="cname"><br><br>
+    <label for="drname">Last name: </label>
+    <input type="text" id="drname" name="drname"><br><br>
+
+    <button onclick="submit()"> Submit</button>
+    <button onclick="appointments()"> Appointments</button><br><br>
   </body>
+
 </html>
