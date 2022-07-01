@@ -26,8 +26,9 @@
         dr: dr,
         clinic: clinic
       }
+      document.getElementById("messaged").innerHTML = clinic;
      window.parent.postMessage(JSON.stringify(message));
-      location.href = "https://localhost:8081/#/appointments?clinic=" + clinic + "&dr=" + dr;
+//       location.href = "https://localhost:8081/#/appointments?clinic=" + clinic + "&dr=" + dr;
     }
     
     
@@ -36,6 +37,7 @@
   <body>
 
     <h1>Enter clinic and doctor</h1>
+    <div id="messaged"></div>
 
     <label for="cname">Clinic: </label>
     <input type="text" id="cname" name="cname"><br><br>
