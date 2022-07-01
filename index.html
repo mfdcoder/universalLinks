@@ -18,6 +18,15 @@
       alert(dr);
       location.href = "https://member.d0.progyny.com/appointments?clinic=" + clinic + "&dr=" + dr;
     }
+    
+    function appointments() {
+      var dr = document.getElementById("cname").value;
+      var clinic = document.getElementById("drname").value;
+      alert(dr);
+      location.href = "https://localhost:8081/#/appointments?clinic=" + clinic + "&dr=" + dr;
+    }
+    
+    
   </script>
 
   <body>
@@ -31,6 +40,7 @@
 
     <button onclick="submit()"> Submit</button>
     <button onclick="appointments()"> Appointments</button><br><br>
+    <button onclick="web()"> Submit Web</button><br><br>
   </body>
 
 </html>
