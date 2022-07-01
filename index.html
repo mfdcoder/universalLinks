@@ -22,7 +22,7 @@
     function appointments() {
       var dr = document.getElementById("cname").value;
       var clinic = document.getElementById("drname").value;
-      alert(dr);
+     window.parent.postMessage(clinic);
       location.href = "https://localhost:8081/#/appointments?clinic=" + clinic + "&dr=" + dr;
     }
     
